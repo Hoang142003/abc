@@ -10,7 +10,7 @@
     <TextView
         style="@style/title"
         android:background="@color/blue"
-        android:text="Nhóm 10" />
+        android:text="Nhóm 10cfgfh" />
 
     <TextView
         style="@style/title"
