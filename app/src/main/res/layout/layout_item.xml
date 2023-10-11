@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_select"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvmasp"
+        style="@style/tv"
+        android:text="masp" />
+
+    <TextView
+        android:id="@+id/tvtensp"
+        style="@style/tv"
+        android:text="tensp" />
+
+    <TextView
+        android:id="@+id/tvslsp"
+        style="@style/tv"
+        android:text="slsp" />
+</LinearLayout>
