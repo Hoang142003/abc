@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements IOnItemClick{
 RecyclerView rev;
 EditText edtmasp,edttensp,edtslsp;
-Button btnthem,btnxoa,btnsua,btnthoat;
+Button btnthem,btnxoa,btnsua,btnthoat,btn_doimau_red,btn_doimau_green;
 int index=-1;
 ArrayList<SanPham> data=new ArrayList<>();
     @Override
@@ -35,6 +35,24 @@ ArrayList<SanPham> data=new ArrayList<>();
         rev.setAdapter(adapter);
         DividerItemDecoration dividerItemDecoration=new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
         rev.addItemDecoration(dividerItemDecoration);
+        btn_doimau_red.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnthem.setBackgroundResource(R.drawable.btn_click_red);
+                btnxoa.setBackgroundResource(R.drawable.btn_click_red);
+                btnsua.setBackgroundResource(R.drawable.btn_click_red);
+                btnthoat.setBackgroundResource(R.drawable.btn_click_red);
+            }
+        });
+        btn_doimau_green.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnthem.setBackgroundResource(R.drawable.button_press);
+                btnxoa.setBackgroundResource(R.drawable.button_press);
+                btnsua.setBackgroundResource(R.drawable.button_press);
+                btnthoat.setBackgroundResource(R.drawable.button_press);
+            }
+        });
         btnthem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,6 +104,8 @@ ArrayList<SanPham> data=new ArrayList<>();
         btnxoa=findViewById(R.id.btnxoa);
         btnsua=findViewById(R.id.btnsua);
         btnthoat=findViewById(R.id.btnthoat);
+        btn_doimau_red=findViewById(R.id.btn_doimau_red);
+        btn_doimau_green=findViewById(R.id.btn_doimau_green);
     }
 
     @Override
